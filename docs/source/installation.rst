@@ -12,7 +12,9 @@ At the command line either via easy_install or pip:
 
     $ easy_install lanyrd
 
-Or, if you have virtualenvwrapper installed::
+Or, if you have virtualenvwrapper installed:
+
+.. code-block:: shell
 
     $ mkvirtualenv lanyrd
     $ pip install lanyrd
