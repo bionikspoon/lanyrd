@@ -1,0 +1,43 @@
+# Config file for automatic testing at travis-ci.org
+# This file will be regenerated if you run travis_pypi_setup.py
+
+language: python
+
+python:
+  - "2.7"
+
+# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
+install:
+  - pip install -U tox --use-mirrors
+  - pip install coveralls
+
+env:
+  - TOXENV=py26
+  - TOXENV=py27
+  - TOXENV=py32
+  - TOXENV=py33
+  - TOXENV=py34
+  # - TOXENV=py35
+  - TOXENV=pypy
+
+# command to run tests, e.g. python setup.py test
+script:
+  - tox -e $TOXENV
+  - coverage run --source=lanyrd setup.py test
+
+after_success:
+  - coveralls
+
+# After you create the Github repo and add it to Travis, run the
+# travis_pypi_setup.py script to finish PyPI deployment setup
+
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: bionikspoon
+  password:
+    secure: eWamCuNStXYIUBJsG3upR9Kn6mq/pp68j1fxVKK0j4p+XHdC6htMOcytUnG2RYnsNcVKsvCXwZZY5/1Y6qz5hgrAeJvW96VCA9IzH9g6sADYlsc/QBeGUK20U9Xkf75nH7dXJ+3iT/sv507Ut2z90Dy8j3DUNoKfYCWFQkV8rUkW1n2RcNg5zddxblKFjsG3r8Hwp7VIAnqYdCfnSbxyFGSYBuTkbzHI5wYlVlNesFwaoh3G9jANZwBoiOPCVn/EJnefknKFZmW9X5a3hVNpx1b0RfK2uDUYHKnk193H6q2kVMogVMtdBjE3/fnTXj5v6VsbfBFlmOThPTKgCr7GUDTFjNgXqYZQb3eUvocVrsNrszvxO6aHNGNp31SFYIkH/y86UThenRocskQuZsXTlm/qY/InVxa03z4LFvcAoxhItm1rTQUrkTLTMzLKIIiBPR/pnjd0y1k8urU5QqHWZQ+LKxeBwWvlSChiUGgvBICOXOaxbgJQeoBWOtmpZqmMkdYtJFiYsDXKPGjP/b6jfoBGmeNqirECSUzkgrXZSHMvgQBQ4mMFID9IA5M75eilL29YNGQIqYvqOQw29bjXg6eVbot/wjpIkmLaOy8fQlc1mOtHzbRkv9fNNLcNOQhmgl47+Y6GbQ1FtGaOJ5Fo4MQAYxdfqYHooxItt9gQuQE=
+  on:
+    tags: true
+    repo: bionikspoon/lanyrd
+    condition: $TOXENV == py27
