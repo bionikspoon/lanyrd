@@ -1,6 +1,6 @@
-===============================
+======
 lanyrd
-===============================
+======
 
 .. image:: https://pypip.in/status/lanyrd/badge.svg
     :target: https://pypi.python.org/pypi/lanyrd/
@@ -34,33 +34,6 @@ Features
 
 * TODO
 
-Installation
-------------
-
-At the command line either via easy_install or pip:
-
-.. code-block:: shell
-
-    $ pip install lanyrd
-
-.. code-block:: shell
-
-    $ easy_install lanyrd
-
-**Uninstall**
-
-.. code-block:: shell
-
-    $ pip uninstall lanyrd
-
-
-Getting Started
----------------
-To use lanyrd in a project:
-
-.. code-block:: python
-
-    import lanyrd
 
 Credits
 -------
@@ -68,7 +41,8 @@ Credits
 Tools used in rendering this package:
 
 *  Cookiecutter_
-*  `cookiecutter-pypackage`_
+*  `bionikspoon/cookiecutter-pypackage`_ forked from `audreyr/cookiecutter-pypackage`_
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _`bionikspoon/cookiecutter-pypackage`: https://github.com/bionikspoon/cookiecutter-pypackage
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage

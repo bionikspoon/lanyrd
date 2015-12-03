@@ -30,8 +30,8 @@ source_encoding = 'utf-8-sig'
 master_doc = 'index'
 
 # General information about the project.
-project = u'lanyrd'
-copyright = u'2015, Manu Phatak'
+project = 'lanyrd'
+copyright = '2015, Manu Phatak'
 author = lanyrd.__author__
 version = lanyrd.__version__
 release = lanyrd.__version__
@@ -79,7 +79,13 @@ latex_elements = {}
 # 'pointsize': '10pt',
 # 'preamble': '',
 
-latex_documents = [('index', 'lanyrd.tex', u'lanyrd Documentation', u'Manu Phatak', 'manual'), ]
+latex_documents = [(  # :off
+    'index',
+    'lanyrd.tex',
+    'lanyrd Documentation',
+    'Manu Phatak',
+    'manual',
+)]  # :on
 
 # latex_logo = None
 # latex_use_parts = False
@@ -90,14 +96,27 @@ latex_documents = [('index', 'lanyrd.tex', u'lanyrd Documentation', u'Manu Phata
 
 # -- Options for manual page output ------------------------------------
 
-man_pages = [('index', 'lanyrd', u'lanyrd Documentation', [u'Manu Phatak'], 1)]
+man_pages = [(  # :off
+    'index',
+    'lanyrd',
+    'lanyrd Documentation',
+    ['Manu Phatak'],
+    1
+)]  # :on
 # man_show_urls = False
 
 # -- Options for Texinfo output ----------------------------------------
 
-texinfo_documents = [(
-    'index', 'lanyrd', u'lanyrd Documentation', u'Manu Phatak', 'lanyrd', 'One line description of project.',
-    'Miscellaneous'), ]
+texinfo_documents = [(  # :off
+    'index',
+    'lanyrd',
+    'lanyrd Documentation',
+    'Manu Phatak',
+    'lanyrd',
+    'One line description of project.',
+    'Miscellaneous'
+)]  # :on
+
 # texinfo_appendices = []
 # texinfo_domain_indices = True
 # texinfo_show_urls = 'footnote'

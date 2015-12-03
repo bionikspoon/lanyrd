@@ -1,13 +1,11 @@
 lanyrd package
 ==============
 
-.. automodule:: lanyrd
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
 Submodules
 ----------
+
+lanyrd.lanyrd module
+--------------------
 
 .. automodule:: lanyrd.lanyrd
     :members:
@@ -15,3 +13,10 @@ Submodules
     :show-inheritance:
 
 
+Module contents
+---------------
+
+.. automodule:: lanyrd
+    :members:
+    :undoc-members:
+    :show-inheritance:

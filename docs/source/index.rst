@@ -1,5 +1,5 @@
-
-.. include:: readme.rst
+Welcome to lanyard's documentation!
+======================================
 
 Contents:
 =========
@@ -8,10 +8,12 @@ Contents:
    :maxdepth: 4
 
     Readme <readme>
-    contributing
-    authors
-    history
-    modules
+    Installation <installation>
+    Usage <usage>
+    Contributing <contributing>
+    Authors <authors>
+    History <history>
+    Modules <modules>
 
 Feedback
 ========
@@ -26,4 +28,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

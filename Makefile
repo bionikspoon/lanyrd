@@ -65,7 +65,7 @@ coverage:
 docs:
 	rm -f docs/source/lanyrd.rst
 	rm -f docs/source/modules.rst
-	sphinx-apidoc  --no-toc --no-headings --private --module-first -o docs/source/ lanyrd
+	sphinx-apidoc -o docs/source/ lanyrd
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	$(BROWSER) docs/build/html/index.html
@@ -79,7 +79,7 @@ release: clean
 
 dist: clean
 	python setup.py sdist
-	python setup.py bdist_wheel upload
+	python setup.py bdist_wheel
 	ls -l dist
 
 install: clean
