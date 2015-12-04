@@ -3,7 +3,6 @@
 lanyrd
 """
 
-
-class lanyrd(object):
+class Lanyrd(object):
     def __str__(self):
-        return "Success"
+        return 'Success'

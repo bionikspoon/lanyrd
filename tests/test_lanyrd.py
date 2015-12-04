@@ -12,9 +12,9 @@ import pytest
 
 @pytest.fixture
 def lanyrd():
-    from lanyrd.lanyrd import lanyrd
+    from lanyrd.lanyrd import Lanyrd
 
-    mock_lanyrd = lanyrd()
+    mock_lanyrd = Lanyrd()
     return mock_lanyrd
 
 
