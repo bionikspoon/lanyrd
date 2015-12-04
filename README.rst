@@ -19,7 +19,7 @@ lanyrd
     :alt: Coverage Status
 
 .. image:: https://readthedocs.org/projects/lanyrd/badge/?version=develop
-    :target: https://readthedocs.org/projects/lanyrd/?badge=develop
+    :target: http://lanyrd.readthedocs.org/en/develop/?badge=develop
     :alt: Documentation Status
 
 
