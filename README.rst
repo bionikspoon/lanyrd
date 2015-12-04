@@ -2,17 +2,17 @@
 lanyrd
 ======
 
-.. image:: https://pypip.in/status/lanyrd/badge.svg
+.. image:: https://badge.fury.io/py/lanyrd.svg
+    :target: https://pypi.python.org/pypi/lanyrd/
+    :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/status/lanyrd.svg
     :target: https://pypi.python.org/pypi/lanyrd/
     :alt: Development Status
 
 .. image:: https://travis-ci.org/bionikspoon/lanyrd.svg?branch=develop
     :target: https://travis-ci.org/bionikspoon/lanyrd?branch=develop
     :alt: Build Status
-
-.. image:: https://pypip.in/version/lanyrd/badge.svg
-    :target: https://pypi.python.org/pypi/lanyrd
-    :alt: Latest Version
 
 .. image:: https://coveralls.io/repos/bionikspoon/lanyrd/badge.svg?branch=develop
     :target: https://coveralls.io/r/bionikspoon/lanyrd?branch=develop
