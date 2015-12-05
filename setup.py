@@ -47,8 +47,7 @@ setup(  # :off
     packages=[
         'lanyrd',
     ],
-    package_dir={'lanyrd':
-                 'lanyrd'},
+    package_dir={'lanyrd':'lanyrd'},
     include_package_data=True,
     install_requires=requirements,
     license="MIT",
